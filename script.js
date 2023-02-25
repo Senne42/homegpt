@@ -35,7 +35,7 @@ function renderTodos() {
 }
 
 
-var images = document.getElementById("carousel").getElementsByTagName("img");
+var images = document.getElementById("carousel").getElementsByClassName("carousel_imagem");
 var currentImage = 0;
 var prevButton = document.getElementById("prevButton");
 var nextButton = document.getElementById("nextButton");

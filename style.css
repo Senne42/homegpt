@@ -1,3 +1,6 @@
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +8,11 @@
   }
   
   body {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: url('https://wallpapercave.com/wp/wp12022857.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.051);
@@ -18,8 +26,10 @@
   }
   
   .block {
-    width: calc(33.33% - 40px);
-    height: 200px;
+    width: auto;
+    min-width: 200px;
+    height: auto;
+    min-height: 200px;
     margin: 20px;
     background-color: #666666;
     color: #ffffff;
@@ -62,7 +72,7 @@ button[type="submit"] {
 	border: none;
 	color: #ffffff;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1em;
 	font-family: 'Arial', sans-serif;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -99,11 +109,6 @@ button[type="submit"]:hover {
   }
 
 
-  #img_carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
 
   #prevButton, #nextButton {
@@ -112,7 +117,7 @@ button[type="submit"]:hover {
     display: inline-block;
     background-color: #333;
     color: #fff;
-    font-size: 16px;
+    font-size: 0.6em;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
