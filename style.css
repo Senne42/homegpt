@@ -90,7 +90,26 @@ button[type="submit"]:hover {
   }
 
 
+
+  #carousel {
+    width: calc(33.33% - 40px);
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  #img_carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
   #prevButton, #nextButton {
+    width: 40%;
+    margin: 0 2.5%;
+    display: inline-block;
     background-color: #333;
     color: #fff;
     font-size: 16px;
@@ -98,7 +117,14 @@ button[type="submit"]:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 8px;
+  }
+
+  #prevButton {
+    float: left;
+  }
+  
+  #nextButton {
+    float: right;
   }
   
   #prevButton:hover, #nextButton:hover {
