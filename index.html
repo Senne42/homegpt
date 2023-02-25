@@ -4,9 +4,12 @@
 	<title>Três blocos centralizados em cinza escuro</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 	<div class="container">
+
+        <!-- TODO LIST -->
 		<div class="block">
 			<h2>To-Do List</h2>
 			<form id="todo-form">
@@ -17,10 +20,25 @@
 				<!-- Lista de itens adicionados -->
 			</ul>
 		</div>
-		<div class="block"></div>
+
+
+        <!-- CARROSSEL -->
+        <div id="carousel">
+            <img src="https://cdn.icon-icons.com/icons2/1465/PNG/512/489frogface_101002.png" style="display: none; max-width: 100%;">
+            <img src="https://cdn.icon-icons.com/icons2/1446/PNG/512/22281frogface_98777.png" style="display: none; max-width: 100%;">
+            <img src="https://cdn.icon-icons.com/icons2/1446/PNG/512/22214dogface_98779.png" style="display: none; max-width: 100%;">
+            <div id="carouselButtons">
+              <button id="prevButton">Anterior</button>
+              <button id="nextButton">Próxima</button>
+            </div>
+          </div>          
+          
+        
+
 		<div class="block"></div>
 	</div>
 
-	<script src="script.js"></script>
+	<script src="script.js"></script>      
+
 </body>
 </html>

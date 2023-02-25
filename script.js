@@ -33,3 +33,29 @@ function renderTodos() {
 		todoList.appendChild(li);
 	}
 }
+
+
+var images = document.getElementById("carousel").getElementsByTagName("img");
+var currentImage = 0;
+var prevButton = document.getElementById("prevButton");
+var nextButton = document.getElementById("nextButton");
+
+function showNextImage() {
+    images[currentImage].style.display = "none";
+    currentImage = (currentImage + 1) % images.length;
+    images[currentImage].style.display = "block";
+  }
+
+prevButton.addEventListener("click", function() {
+    images[currentImage].style.display = "none";
+    currentImage = (currentImage - 1 + images.length) % images.length;
+    images[currentImage].style.display = "block";
+  });
+  
+nextButton.addEventListener("click", function() {
+    images[currentImage].style.display = "none";
+    currentImage = (currentImage + 1) % images.length;
+    images[currentImage].style.display = "block";
+  });
+
+setInterval(showNextImage, 3000); // exibe uma nova imagem a cada 3 segundos
